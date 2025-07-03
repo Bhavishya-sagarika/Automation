@@ -1,9 +1,14 @@
+import streamlit as st
 import pandas as pd
 import numpy as np
-import streamlit as st
-from sklearn.cluster import KMeans
-from sklearn.linear_model import LogisticRegression
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.linear_model import LogisticRegression
+from sklearn.cluster import KMeans
+
 
 # Streamlit configuration
 st.set_page_config(page_title="AI Email Marketing Platform", page_icon="📧", layout="wide")
